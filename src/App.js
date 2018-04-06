@@ -11,14 +11,17 @@ class App extends Component {
       this.state={
        tests: [
           {
-            checkboxes: ["test 1", "test 2", "test 3"]
+            checkboxes: ["test 1", "test 2", "test 3"],
+            type: 1
           },
           {
-            checkboxes: ["test 4", "test 5", "test 6"]
+            checkboxes: ["test 4"],
+            type: 2
           },
           {
-            checkboxes: ["test 7", "test 8", "test 9"]
-          }
+            checkboxes: ["test 5", "test 6", "test 7"],
+            type: 3
+          },
         ]
       }
   }
@@ -31,13 +34,16 @@ class App extends Component {
             this.state.tests.map((test, index)=>{
               return (
                 <div className="external-test-container"> 
-                  <Test testNumber={index} key={index} checkboxes={test.checkboxes}/>
+                  <Test testNumber={index} type={test.type} key={index} checkboxes={test.checkboxes}/>
                 </div>
               )
             })
           }
-          <div className="submit-all-tests-button">
-            Submit all tests
+
+          <div className="submit-all-tests-button-container">
+            <div className="submit-all-tests-button">
+              Submit all tests
+            </div>
           </div>
       </div>
     );

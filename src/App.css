@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+body {
+  background: #fafafa;  
+  
+}
+
 .App{
   padding: 15px;
   padding-bottom: 60px;
 }
 
+.submit-all-tests-button-container {
+  text-align: center;  
+}
+
 .submit-all-tests-button {
   width: 200px;
-  display: block;
-  border: 2px solid #8dc169;
-  background: #8dc169;
+  display: inline-block;
+  border: 2px solid #657cb6;
+  background: #657cb6;
   font-size: 1.2em;
   text-transform: uppercase;
   padding: 10px;
@@ -19,6 +28,7 @@
 }
 
 .submit-all-tests-button:hover {
-  color: #8dc169;
+  color: #657cb6;
   background: white;
 }
+
