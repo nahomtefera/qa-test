@@ -176,3 +176,7 @@ select {
     background: white;
 }
 
+input[type="checkbox"]:checked {
+    background-image: url("../../images/checkmark.png");
+    background-size: contain;
+ }
